@@ -1,21 +1,18 @@
-development: 
+
+
+default: &default
   adapter: postgresql
-  database: sampledb
-  password: md5574a71crails s72b114546ec3e5663914dc67c
+  encoding: unicode
   pool: 5
   timeout: 5000
-  username: P
-  host: localhost
+  username: postgres
   port: 5432
+  host: localhost
 
-production: 
-  adapter: postgresql
+development:
+  <<: *default
   database: sampledb
-  pool: 5
-  timeout: 5000
 
-test: 
-  adapter: postgresql
-  database: sampledb
-  pool: 5
-  timeout: 5000
+production:
+  <<: *default
+  url: <%= ENV['DATABASE_URL'] %>

@@ -149,15 +149,28 @@ ActiveRecord::Schema.define(version: 20180111102722) do
     t.text     "description"
     t.string   "pin"
     t.boolean  "phone_verified"
-    t.string   "stripe_id"
     t.string   "merchant_id"
     t.string   "merchant_provider"
     t.string   "merchant_access_code"
     t.string   "merchant_publishable_key"
-    t.integer  "unread",                   default: 1
+    t.string   "omise_id"
+    t.integer  "unread",                   default: 0
     t.index ["confirmation_token"], name: "index_users_on_confirmation_token", unique: true, using: :btree
     t.index ["email"], name: "index_users_on_email", unique: true, using: :btree
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
   end
 
+  add_foreign_key "calendars", "rooms"
+  add_foreign_key "messages", "conversations"
+  add_foreign_key "messages", "users"
+  add_foreign_key "notifications", "users"
+  add_foreign_key "photos", "rooms"
+  add_foreign_key "reservations", "rooms"
+  add_foreign_key "reservations", "users"
+  add_foreign_key "reviews", "reservations"
+  add_foreign_key "reviews", "rooms"
+  add_foreign_key "reviews", "users", column: "guest_id"
+  add_foreign_key "reviews", "users", column: "host_id"
+  add_foreign_key "rooms", "users"
+  add_foreign_key "settings", "users"
 end

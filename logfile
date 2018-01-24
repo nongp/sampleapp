@@ -41,3 +41,298 @@
 2018-01-23 17:54:55.839 +07 [2818] DETAIL:  The postmaster has commanded this server process to roll back the current transaction and exit, because another server process exited abnormally and possibly corrupted shared memory.
 2018-01-23 17:54:55.839 +07 [2818] HINT:  In a moment you should be able to reconnect to the database and repeat your command.
 2018-01-23 17:54:55.848 +07 [2743] LOG:  database system is shut down
+2018-01-24 23:56:45.969 +07 [2866] LOG:  could not bind IPv6 address "::1": Address already in use
+2018-01-24 23:56:45.969 +07 [2866] HINT:  Is another postmaster already running on port 5432? If not, wait a few seconds and retry.
+2018-01-24 23:56:45.996 +07 [2866] LOG:  could not bind IPv6 address "fe80::1%lo0": Address already in use
+2018-01-24 23:56:45.996 +07 [2866] HINT:  Is another postmaster already running on port 5432? If not, wait a few seconds and retry.
+2018-01-24 23:56:45.996 +07 [2866] LOG:  could not bind IPv4 address "127.0.0.1": Address already in use
+2018-01-24 23:56:45.996 +07 [2866] HINT:  Is another postmaster already running on port 5432? If not, wait a few seconds and retry.
+2018-01-24 23:56:45.996 +07 [2866] WARNING:  could not create listen socket for "localhost"
+2018-01-24 23:56:45.996 +07 [2866] FATAL:  could not create any TCP/IP sockets
+2018-01-24 23:56:45.996 +07 [2866] LOG:  database system is shut down
+2018-01-24 23:57:15.970 +07 [2871] LOG:  could not bind IPv6 address "::1": Address already in use
+2018-01-24 23:57:15.970 +07 [2871] HINT:  Is another postmaster already running on port 5432? If not, wait a few seconds and retry.
+2018-01-24 23:57:15.971 +07 [2871] LOG:  could not bind IPv6 address "fe80::1%lo0": Address already in use
+2018-01-24 23:57:15.971 +07 [2871] HINT:  Is another postmaster already running on port 5432? If not, wait a few seconds and retry.
+2018-01-24 23:57:15.971 +07 [2871] LOG:  could not bind IPv4 address "127.0.0.1": Address already in use
+2018-01-24 23:57:15.971 +07 [2871] HINT:  Is another postmaster already running on port 5432? If not, wait a few seconds and retry.
+2018-01-24 23:57:15.971 +07 [2871] WARNING:  could not create listen socket for "localhost"
+2018-01-24 23:57:15.971 +07 [2871] FATAL:  could not create any TCP/IP sockets
+2018-01-24 23:57:15.971 +07 [2871] LOG:  database system is shut down
+2018-01-25 00:16:25.077 +07 [3389] LOG:  listening on IPv6 address "::1", port 5432
+2018-01-25 00:16:25.122 +07 [3389] LOG:  listening on IPv6 address "fe80::1%lo0", port 5432
+2018-01-25 00:16:25.122 +07 [3389] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2018-01-25 00:16:25.135 +07 [3389] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2018-01-25 00:16:25.754 +07 [3390] LOG:  database system was interrupted; last known up at 2018-01-25 00:03:37 +07
+2018-01-25 00:16:25.899 +07 [3390] LOG:  database system was not properly shut down; automatic recovery in progress
+2018-01-25 00:16:26.050 +07 [3390] LOG:  redo starts at 0/1658880
+2018-01-25 00:16:26.050 +07 [3390] LOG:  invalid record length at 0/1658960: wanted 24, got 0
+2018-01-25 00:16:26.050 +07 [3390] LOG:  redo done at 0/1658928
+2018-01-25 00:16:26.140 +07 [3389] LOG:  database system is ready to accept connections
+2018-01-25 00:16:51.103 +07 [3400] FATAL:  role "postgres" does not exist
+2018-01-25 00:50:42.925 +07 [3699] ERROR:  syntax error at or near "CREATE" at character 22
+2018-01-25 00:50:42.925 +07 [3699] STATEMENT:  CREATE ROLE postgres
+	CREATE ROLE postgres;
+2018-01-25 00:51:48.631 +07 [3733] FATAL:  database "P" does not exist
+2018-01-25 00:54:04.951 +07 [3751] FATAL:  role "postgres" does not exist
+2018-01-25 01:01:13.948 +07 [3761] ERROR:  syntax error at or near "psql" at character 1
+2018-01-25 01:01:13.948 +07 [3761] STATEMENT:  psql -U postgres -d postgres -h 127.0.0.1 -W
+	CREATE USER postgres WITH PASSWORD 'postgres';
+2018-01-25 01:02:31.817 +07 [3761] ERROR:  syntax error at or near ";" at character 51
+2018-01-25 01:02:31.817 +07 [3761] STATEMENT:  CREATE DATABASE postgres_development WITH postgres;
+2018-01-25 01:03:08.798 +07 [3761] ERROR:  syntax error at or near "GRANT" at character 67
+2018-01-25 01:03:08.798 +07 [3761] STATEMENT:  GRANT ALL PRIVILEGES ON DATABASE postgres_development TO postgres
+	GRANT ALL PRIVILEGES ON DATABASE postgres_development TO postgres;
+2018-01-25 01:04:31.837 +07 [3761] ERROR:  syntax error at or near "CREATE" at character 26
+2018-01-25 01:04:31.837 +07 [3761] STATEMENT:  CREATE DATABASE P WITH P
+	CREATE DATABASE P WITH P;
+2018-01-25 01:04:55.535 +07 [3761] ERROR:  database "p" does not exist
+2018-01-25 01:04:55.535 +07 [3761] STATEMENT:  GRANT ALL PRIVILEGES ON DATABASE P TO P;
+2018-01-25 01:06:17.480 +07 [3761] ERROR:  syntax error at or near "-" at character 23
+2018-01-25 01:06:17.480 +07 [3761] STATEMENT:  CREATE DATABASE metals-directory_production  WITH yourname;
+2018-01-25 01:06:32.723 +07 [3761] ERROR:  syntax error at or near "-" at character 40
+2018-01-25 01:06:32.723 +07 [3761] STATEMENT:  GRANT ALL PRIVILEGES ON DATABASE metals-directory_production TO yourname;
+2018-01-25 01:18:01.385 +07 [3932] ERROR:  syntax error at or near "ALTER" at character 35
+2018-01-25 01:18:01.385 +07 [3932] STATEMENT:  ALTER USER postgres WITH CREATEDB
+	ALTER USER postgres WITH CREATEDB;
+2018-01-25 01:22:03.616 +07 [3932] ERROR:  syntax error at or near "CREATE" at character 26
+2018-01-25 01:22:03.616 +07 [3932] STATEMENT:  ALTER USER postgres WITH CREATE DB;
+2018-01-25 01:26:53.716 +07 [3932] ERROR:  syntax error at or near "DB" at character 8
+2018-01-25 01:26:53.716 +07 [3932] STATEMENT:  CREATE DB P
+	ALTER USER P WITH PASSWORD '114477ab';
+2018-01-25 01:27:53.156 +07 [3932] ERROR:  syntax error at or near "rm" at character 1
+2018-01-25 01:27:53.156 +07 [3932] STATEMENT:  rm ~/.psql_history
+	ALTER USER P WITH PASSWORD '114477ab';
+2018-01-25 01:33:06.384 +07 [4107] FATAL:  database "P" does not exist
+2018-01-25 01:33:44.629 +07 [4117] FATAL:  database "P" does not exist
+2018-01-25 01:34:11.403 +07 [4125] FATAL:  database "P" does not exist
+2018-01-25 01:37:34.563 +07 [4190] FATAL:  database "template0" is not currently accepting connections
+2018-01-25 01:38:38.208 +07 [4223] FATAL:  database "template0" is not currently accepting connections
+2018-01-25 01:39:03.200 +07 [3391] ERROR:  could not access status of transaction 0
+2018-01-25 01:39:03.200 +07 [3391] DETAIL:  Could not open file "pg_xact/0000": No such file or directory.
+2018-01-25 01:39:04.224 +07 [3391] ERROR:  could not access status of transaction 0
+2018-01-25 01:39:04.224 +07 [3391] DETAIL:  Could not open file "pg_xact/0000": No such file or directory.
+2018-01-25 01:39:05.224 +07 [3391] ERROR:  could not access status of transaction 0
+2018-01-25 01:39:05.224 +07 [3391] DETAIL:  Could not open file "pg_xact/0000": No such file or directory.
+2018-01-25 01:39:06.225 +07 [3391] ERROR:  could not access status of transaction 0
+2018-01-25 01:39:06.225 +07 [3391] DETAIL:  Could not open file "pg_xact/0000": No such file or directory.
+2018-01-25 01:39:07.226 +07 [3391] ERROR:  could not access status of transaction 0
+2018-01-25 01:39:07.226 +07 [3391] DETAIL:  Could not open file "pg_xact/0000": No such file or directory.
+2018-01-25 01:39:08.228 +07 [3391] ERROR:  could not access status of transaction 0
+2018-01-25 01:39:08.228 +07 [3391] DETAIL:  Could not open file "pg_xact/0000": No such file or directory.
+2018-01-25 01:39:09.229 +07 [3391] ERROR:  could not access status of transaction 0
+2018-01-25 01:39:09.229 +07 [3391] DETAIL:  Could not open file "pg_xact/0000": No such file or directory.
+2018-01-25 01:39:10.230 +07 [3391] ERROR:  could not access status of transaction 0
+2018-01-25 01:39:10.230 +07 [3391] DETAIL:  Could not open file "pg_xact/0000": No such file or directory.
+2018-01-25 01:39:11.230 +07 [3391] ERROR:  could not access status of transaction 0
+2018-01-25 01:39:11.230 +07 [3391] DETAIL:  Could not open file "pg_xact/0000": No such file or directory.
+2018-01-25 01:39:12.231 +07 [3391] ERROR:  could not access status of transaction 0
+2018-01-25 01:39:12.231 +07 [3391] DETAIL:  Could not open file "pg_xact/0000": No such file or directory.
+2018-01-25 01:39:13.232 +07 [3391] ERROR:  could not access status of transaction 0
+2018-01-25 01:39:13.232 +07 [3391] DETAIL:  Could not open file "pg_xact/0000": No such file or directory.
+2018-01-25 01:39:14.233 +07 [3391] ERROR:  could not access status of transaction 0
+2018-01-25 01:39:14.233 +07 [3391] DETAIL:  Could not open file "pg_xact/0000": No such file or directory.
+2018-01-25 01:39:15.234 +07 [3391] ERROR:  could not access status of transaction 0
+2018-01-25 01:39:15.234 +07 [3391] DETAIL:  Could not open file "pg_xact/0000": No such file or directory.
+2018-01-25 01:39:16.268 +07 [3391] ERROR:  could not access status of transaction 0
+2018-01-25 01:39:16.268 +07 [3391] DETAIL:  Could not open file "pg_xact/0000": No such file or directory.
+2018-01-25 01:39:17.268 +07 [3391] ERROR:  could not access status of transaction 0
+2018-01-25 01:39:17.268 +07 [3391] DETAIL:  Could not open file "pg_xact/0000": No such file or directory.
+2018-01-25 01:39:18.268 +07 [3391] ERROR:  could not access status of transaction 0
+2018-01-25 01:39:18.268 +07 [3391] DETAIL:  Could not open file "pg_xact/0000": No such file or directory.
+2018-01-25 01:39:19.270 +07 [3391] ERROR:  could not access status of transaction 0
+2018-01-25 01:39:19.270 +07 [3391] DETAIL:  Could not open file "pg_xact/0000": No such file or directory.
+2018-01-25 01:39:20.270 +07 [3391] ERROR:  could not access status of transaction 0
+2018-01-25 01:39:20.270 +07 [3391] DETAIL:  Could not open file "pg_xact/0000": No such file or directory.
+2018-01-25 01:39:21.271 +07 [3391] ERROR:  could not access status of transaction 0
+2018-01-25 01:39:21.271 +07 [3391] DETAIL:  Could not open file "pg_xact/0000": No such file or directory.
+2018-01-25 01:39:22.271 +07 [3391] ERROR:  could not access status of transaction 0
+2018-01-25 01:39:22.271 +07 [3391] DETAIL:  Could not open file "pg_xact/0000": No such file or directory.
+2018-01-25 01:39:23.272 +07 [3391] ERROR:  could not access status of transaction 0
+2018-01-25 01:39:23.272 +07 [3391] DETAIL:  Could not open file "pg_xact/0000": No such file or directory.
+2018-01-25 01:39:24.273 +07 [3391] ERROR:  could not access status of transaction 0
+2018-01-25 01:39:24.273 +07 [3391] DETAIL:  Could not open file "pg_xact/0000": No such file or directory.
+2018-01-25 01:39:25.274 +07 [3391] ERROR:  could not access status of transaction 0
+2018-01-25 01:39:25.274 +07 [3391] DETAIL:  Could not open file "pg_xact/0000": No such file or directory.
+2018-01-25 01:39:26.275 +07 [3391] ERROR:  could not access status of transaction 0
+2018-01-25 01:39:26.275 +07 [3391] DETAIL:  Could not open file "pg_xact/0000": No such file or directory.
+2018-01-25 01:39:27.011 +07 [3395] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-25 01:39:27.276 +07 [3391] ERROR:  could not access status of transaction 0
+2018-01-25 01:39:27.276 +07 [3391] DETAIL:  Could not open file "pg_xact/0000": No such file or directory.
+2018-01-25 01:39:27.697 +07 [3395] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-25 01:39:27.697 +07 [3395] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-25 01:39:28.277 +07 [3391] ERROR:  could not access status of transaction 0
+2018-01-25 01:39:28.277 +07 [3391] DETAIL:  Could not open file "pg_xact/0000": No such file or directory.
+2018-01-25 01:39:28.387 +07 [3395] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-25 01:39:28.387 +07 [3395] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-25 01:39:29.075 +07 [3395] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-25 01:39:29.075 +07 [3395] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-25 01:39:29.292 +07 [3391] ERROR:  could not access status of transaction 0
+2018-01-25 01:39:29.292 +07 [3391] DETAIL:  Could not open file "pg_xact/0000": No such file or directory.
+2018-01-25 01:39:29.784 +07 [3395] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-25 01:39:29.784 +07 [3395] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-25 01:39:30.293 +07 [3391] ERROR:  could not access status of transaction 0
+2018-01-25 01:39:30.293 +07 [3391] DETAIL:  Could not open file "pg_xact/0000": No such file or directory.
+2018-01-25 01:39:30.473 +07 [3395] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-25 01:39:30.473 +07 [3395] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-25 01:39:31.165 +07 [3395] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-25 01:39:31.165 +07 [3395] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-25 01:39:31.294 +07 [3391] ERROR:  could not access status of transaction 0
+2018-01-25 01:39:31.294 +07 [3391] DETAIL:  Could not open file "pg_xact/0000": No such file or directory.
+2018-01-25 01:39:31.850 +07 [3395] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-25 01:39:31.850 +07 [3395] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-25 01:39:32.295 +07 [3391] ERROR:  could not access status of transaction 0
+2018-01-25 01:39:32.295 +07 [3391] DETAIL:  Could not open file "pg_xact/0000": No such file or directory.
+2018-01-25 01:39:32.536 +07 [3395] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-25 01:39:32.536 +07 [3395] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-25 01:39:33.223 +07 [3395] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-25 01:39:33.224 +07 [3395] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-25 01:39:33.296 +07 [3391] ERROR:  could not access status of transaction 0
+2018-01-25 01:39:33.296 +07 [3391] DETAIL:  Could not open file "pg_xact/0000": No such file or directory.
+2018-01-25 01:39:33.914 +07 [3395] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-25 01:39:33.914 +07 [3395] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-25 01:39:34.297 +07 [3391] ERROR:  could not access status of transaction 0
+2018-01-25 01:39:34.297 +07 [3391] DETAIL:  Could not open file "pg_xact/0000": No such file or directory.
+2018-01-25 01:39:34.602 +07 [3395] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-25 01:39:34.602 +07 [3395] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-25 01:39:35.293 +07 [3395] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-25 01:39:35.293 +07 [3395] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-25 01:39:35.298 +07 [3391] ERROR:  could not access status of transaction 0
+2018-01-25 01:39:35.298 +07 [3391] DETAIL:  Could not open file "pg_xact/0000": No such file or directory.
+2018-01-25 01:39:35.976 +07 [3395] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-25 01:39:35.976 +07 [3395] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-25 01:39:36.299 +07 [3391] ERROR:  could not access status of transaction 0
+2018-01-25 01:39:36.299 +07 [3391] DETAIL:  Could not open file "pg_xact/0000": No such file or directory.
+2018-01-25 01:39:36.660 +07 [3395] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-25 01:39:36.660 +07 [3395] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-25 01:39:37.300 +07 [3391] ERROR:  could not access status of transaction 0
+2018-01-25 01:39:37.300 +07 [3391] DETAIL:  Could not open file "pg_xact/0000": No such file or directory.
+2018-01-25 01:39:37.351 +07 [3395] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-25 01:39:37.351 +07 [3395] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-25 01:39:37.784 +07 [3394] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2018-01-25 01:39:37.784 +07 [3395] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-25 01:39:37.784 +07 [3395] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-25 01:39:38.301 +07 [3391] ERROR:  could not access status of transaction 0
+2018-01-25 01:39:38.301 +07 [3391] DETAIL:  Could not open file "pg_xact/0000": No such file or directory.
+2018-01-25 01:39:38.467 +07 [3395] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-25 01:39:38.467 +07 [3395] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-25 01:39:39.157 +07 [3395] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-25 01:39:39.157 +07 [3395] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-25 01:39:39.302 +07 [3391] ERROR:  could not access status of transaction 0
+2018-01-25 01:39:39.302 +07 [3391] DETAIL:  Could not open file "pg_xact/0000": No such file or directory.
+2018-01-25 01:39:39.844 +07 [3395] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-25 01:39:39.844 +07 [3395] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-25 01:39:40.303 +07 [3391] ERROR:  could not access status of transaction 0
+2018-01-25 01:39:40.303 +07 [3391] DETAIL:  Could not open file "pg_xact/0000": No such file or directory.
+2018-01-25 01:39:40.550 +07 [3395] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-25 01:39:40.560 +07 [3395] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-25 01:39:41.217 +07 [3395] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-25 01:39:41.217 +07 [3395] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-25 01:39:41.304 +07 [3391] ERROR:  could not access status of transaction 0
+2018-01-25 01:39:41.304 +07 [3391] DETAIL:  Could not open file "pg_xact/0000": No such file or directory.
+2018-01-25 01:39:41.898 +07 [3395] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-25 01:39:41.898 +07 [3395] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-25 01:39:42.304 +07 [3391] ERROR:  could not access status of transaction 0
+2018-01-25 01:39:42.304 +07 [3391] DETAIL:  Could not open file "pg_xact/0000": No such file or directory.
+2018-01-25 01:39:42.588 +07 [3395] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-25 01:39:42.588 +07 [3395] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-25 01:39:43.269 +07 [3395] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-25 01:39:43.270 +07 [3395] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-25 01:39:43.305 +07 [3391] ERROR:  could not access status of transaction 0
+2018-01-25 01:39:43.305 +07 [3391] DETAIL:  Could not open file "pg_xact/0000": No such file or directory.
+2018-01-25 01:39:43.953 +07 [3395] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-25 01:39:43.953 +07 [3395] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-25 01:39:44.305 +07 [3391] ERROR:  could not access status of transaction 0
+2018-01-25 01:39:44.305 +07 [3391] DETAIL:  Could not open file "pg_xact/0000": No such file or directory.
+2018-01-25 01:39:44.632 +07 [3395] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-25 01:39:44.632 +07 [3395] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-25 01:39:45.306 +07 [3391] ERROR:  could not access status of transaction 0
+2018-01-25 01:39:45.306 +07 [3391] DETAIL:  Could not open file "pg_xact/0000": No such file or directory.
+2018-01-25 01:39:45.314 +07 [3395] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-25 01:39:45.314 +07 [3395] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-25 01:39:45.996 +07 [3395] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-25 01:39:45.996 +07 [3395] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-25 01:39:46.307 +07 [3391] ERROR:  could not access status of transaction 0
+2018-01-25 01:39:46.307 +07 [3391] DETAIL:  Could not open file "pg_xact/0000": No such file or directory.
+2018-01-25 01:39:46.680 +07 [3395] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-25 01:39:46.680 +07 [3395] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-25 01:39:47.308 +07 [3391] ERROR:  could not access status of transaction 0
+2018-01-25 01:39:47.308 +07 [3391] DETAIL:  Could not open file "pg_xact/0000": No such file or directory.
+2018-01-25 01:39:47.369 +07 [3395] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-25 01:39:47.369 +07 [3395] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-25 01:39:48.055 +07 [3395] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-25 01:39:48.056 +07 [3395] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-25 01:39:48.308 +07 [3391] ERROR:  could not access status of transaction 0
+2018-01-25 01:39:48.308 +07 [3391] DETAIL:  Could not open file "pg_xact/0000": No such file or directory.
+2018-01-25 01:39:48.483 +07 [3394] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2018-01-25 01:39:48.484 +07 [3395] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-25 01:39:48.484 +07 [3395] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-25 01:39:49.161 +07 [3395] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-25 01:39:49.161 +07 [3395] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-25 01:39:49.311 +07 [3391] ERROR:  could not access status of transaction 0
+2018-01-25 01:39:49.311 +07 [3391] DETAIL:  Could not open file "pg_xact/0000": No such file or directory.
+2018-01-25 01:39:49.849 +07 [3395] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-25 01:39:49.849 +07 [3395] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-25 01:39:50.312 +07 [3391] ERROR:  could not access status of transaction 0
+2018-01-25 01:39:50.312 +07 [3391] DETAIL:  Could not open file "pg_xact/0000": No such file or directory.
+2018-01-25 01:39:50.536 +07 [3395] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-25 01:39:50.536 +07 [3395] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-25 01:39:51.221 +07 [3395] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-25 01:39:51.221 +07 [3395] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-25 01:39:51.333 +07 [3391] ERROR:  could not access status of transaction 0
+2018-01-25 01:39:51.333 +07 [3391] DETAIL:  Could not open file "pg_xact/0000": No such file or directory.
+2018-01-25 01:39:51.912 +07 [3395] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-25 01:39:51.912 +07 [3395] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-25 01:39:52.334 +07 [3391] ERROR:  could not access status of transaction 0
+2018-01-25 01:39:52.334 +07 [3391] DETAIL:  Could not open file "pg_xact/0000": No such file or directory.
+2018-01-25 01:39:52.596 +07 [3395] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-25 01:39:52.596 +07 [3395] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-25 01:39:53.274 +07 [3395] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-25 01:39:53.274 +07 [3395] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-25 01:39:53.335 +07 [3391] ERROR:  could not access status of transaction 0
+2018-01-25 01:39:53.335 +07 [3391] DETAIL:  Could not open file "pg_xact/0000": No such file or directory.
+2018-01-25 01:39:53.950 +07 [3395] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-25 01:39:53.950 +07 [3395] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-25 01:39:54.336 +07 [3391] ERROR:  could not access status of transaction 0
+2018-01-25 01:39:54.336 +07 [3391] DETAIL:  Could not open file "pg_xact/0000": No such file or directory.
+2018-01-25 01:39:54.627 +07 [3395] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-25 01:39:54.627 +07 [3395] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-25 01:39:55.315 +07 [3395] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-25 01:39:55.315 +07 [3395] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-25 01:39:55.337 +07 [3391] ERROR:  could not access status of transaction 0
+2018-01-25 01:39:55.337 +07 [3391] DETAIL:  Could not open file "pg_xact/0000": No such file or directory.
+2018-01-25 01:39:55.999 +07 [3395] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-25 01:39:55.999 +07 [3395] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-25 01:39:56.338 +07 [3391] ERROR:  could not access status of transaction 0
+2018-01-25 01:39:56.338 +07 [3391] DETAIL:  Could not open file "pg_xact/0000": No such file or directory.
+2018-01-25 01:39:56.687 +07 [3395] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-25 01:39:56.687 +07 [3395] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2018-01-25 01:39:57.114 +07 [3389] LOG:  could not open file "postmaster.pid": No such file or directory
+2018-01-25 01:39:57.114 +07 [3389] LOG:  performing immediate shutdown because data directory lock file is invalid
+2018-01-25 01:39:57.114 +07 [3389] LOG:  received immediate shutdown request
+2018-01-25 01:39:57.114 +07 [3389] LOG:  could not open file "postmaster.pid": No such file or directory
+2018-01-25 01:39:57.115 +07 [3394] WARNING:  terminating connection because of crash of another server process
+2018-01-25 01:39:57.115 +07 [3394] DETAIL:  The postmaster has commanded this server process to roll back the current transaction and exit, because another server process exited abnormally and possibly corrupted shared memory.
+2018-01-25 01:39:57.115 +07 [3394] HINT:  In a moment you should be able to reconnect to the database and repeat your command.
+2018-01-25 01:39:57.116 +07 [3395] LOG:  could not open temporary statistics file "pg_stat/global.tmp": No such file or directory
+2018-01-25 01:39:57.389 +07 [3389] LOG:  database system is shut down
+2018-01-25 01:40:43.427 +07 [4261] FATAL:  lock file "postmaster.pid" already exists
+2018-01-25 01:40:43.427 +07 [4261] HINT:  Is another postmaster (PID 4246) running in data directory "/usr/local/var/postgres"?
+2018-01-25 01:46:40.190 +07 [4306] LOG:  could not bind IPv6 address "::1": Address already in use
+2018-01-25 01:46:40.190 +07 [4306] HINT:  Is another postmaster already running on port 5432? If not, wait a few seconds and retry.
+2018-01-25 01:46:40.235 +07 [4306] LOG:  could not bind IPv6 address "fe80::1%lo0": Address already in use
+2018-01-25 01:46:40.235 +07 [4306] HINT:  Is another postmaster already running on port 5432? If not, wait a few seconds and retry.
+2018-01-25 01:46:40.235 +07 [4306] LOG:  could not bind IPv4 address "127.0.0.1": Address already in use
+2018-01-25 01:46:40.235 +07 [4306] HINT:  Is another postmaster already running on port 5432? If not, wait a few seconds and retry.
+2018-01-25 01:46:40.235 +07 [4306] WARNING:  could not create listen socket for "localhost"
+2018-01-25 01:46:40.235 +07 [4306] FATAL:  could not create any TCP/IP sockets
+2018-01-25 01:46:40.235 +07 [4306] LOG:  database system is shut down
+2018-01-25 01:48:52.835 +07 [4343] LOG:  could not bind IPv6 address "::1": Address already in use
+2018-01-25 01:48:52.835 +07 [4343] HINT:  Is another postmaster already running on port 5432? If not, wait a few seconds and retry.
+2018-01-25 01:48:52.868 +07 [4343] LOG:  could not bind IPv6 address "fe80::1%lo0": Address already in use
+2018-01-25 01:48:52.868 +07 [4343] HINT:  Is another postmaster already running on port 5432? If not, wait a few seconds and retry.
+2018-01-25 01:48:52.868 +07 [4343] LOG:  could not bind IPv4 address "127.0.0.1": Address already in use
+2018-01-25 01:48:52.868 +07 [4343] HINT:  Is another postmaster already running on port 5432? If not, wait a few seconds and retry.
+2018-01-25 01:48:52.868 +07 [4343] WARNING:  could not create listen socket for "localhost"
+2018-01-25 01:48:52.868 +07 [4343] FATAL:  could not create any TCP/IP sockets
+2018-01-25 01:48:52.868 +07 [4343] LOG:  database system is shut down
