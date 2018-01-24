@@ -53,7 +53,7 @@ gem 'activeadmin'
 
 	group :development do
 	  gem 'web-console', '>= 3.3.0'
-	  gem 'pg', '~> 0.18'
+	  gem 'pg', '~> 0.21.0'
 	  gem 'byebug', platform: :mri 
 	end
 
