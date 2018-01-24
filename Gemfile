@@ -50,12 +50,9 @@ gem 'omise'
 gem 'chartkick', '~> 2.2.4'
 
 gem 'activeadmin'
-
-
-gem 'web-console', '>= 3.3.0'
 gem 'pg', '~> 0.21.0'
 gem 'byebug', platform: :mri 
 
-
+gem 'web-console', '>= 3.3.0', group: :development
 
 
