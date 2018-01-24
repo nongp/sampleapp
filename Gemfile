@@ -51,8 +51,14 @@ gem 'chartkick', '~> 2.2.4'
 
 gem 'activeadmin'
 gem 'pg', '~> 0.21.0'
-gem 'byebug', platform: :mri 
 
-gem 'web-console', '>= 3.3.0', group: :development
+	group :development do
+	  gem 'web-console', '>= 3.3.0'
+	  gem 'byebug', platform: :mri 
+	end
+
+	group :production do
+		
+	end
 
 
